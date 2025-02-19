@@ -6,11 +6,29 @@ function NavBar() {
     <div className="NavBar">
       {/* Clickable Logo */}
       <div className="cursor-pointer" onClick={() => window.location.reload()}>
-        <img src={vinyl} alt="Logo" className="w-12 h-auto" />
+        <img
+          src={vinyl}
+          alt="Logo"
+          className="vinyl-img"
+          style={{
+            width: "140px",
+            height: "120px",
+            position: "absolute",
+            top: "0px",
+            right: "0px",
+          }}
+        />
       </div>
 
       {/* Header */}
-      <div className="Name">Vinylage</div>
+      <div className="Bar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div className="Join">
+        <button className="round-button-join">Log in</button>
+      </div>
     </div>
   );
 }
