@@ -1,4 +1,4 @@
-# Groovaye: To Find the One
+# Groovyr: Music Recommendation App
 
 ## OverView
 

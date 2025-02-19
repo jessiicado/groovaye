@@ -13,7 +13,8 @@
   background-color: var(--page-background-color);
 }
 
-a {
+.Home,
+.Swipe {
   font-weight: 500;
   font-size: 18px;
   color: var(--default-font-color);
@@ -25,16 +26,20 @@ a:hover {
   color: #413f3f;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
 }
 
-.Bar {
+.Nav {
   display: flex;
   justify-content: flex-end;
   padding: 10px 20px;
@@ -68,4 +73,76 @@ button:hover {
   background-color: var(--page-background-color);
   border-color: var(--widget-background-color);
   color: var(--widget-background-color);
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.homepage h1 {
+  font-size: 64px;
+  margin: 5px;
+  animation: fadeIn 2s;
+}
+
+.homepage p {
+  font-size: 24px;
+  margin: 15px;
+  animation: fadeIn 2s;
+}
+
+.homepage span {
+  background: linear-gradient(
+    to right,
+    var(---default-font-color) 20%,
+    #444040 30%,
+    #858383 70%,
+    #c0baba 80%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 4s ease-in-out infinite alternate;
+}
+
+.getStarted {
+  border-radius: 30px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.4em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--widget-background-color);
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

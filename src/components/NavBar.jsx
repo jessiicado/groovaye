@@ -1,5 +1,6 @@
 import React from "react";
 import vinyl from "./vinyl.png";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -21,10 +22,15 @@ function NavBar() {
       </div>
 
       {/* Header */}
-      <div className="Bar">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">FAQ</a>
+
+      <div className="Nav">
+        <Link to="/" className="Home">
+          Home
+        </Link>
+
+        <Link to="/swipe" className="Swipe">
+          Swipe
+        </Link>
       </div>
       <div className="Join">
         <button className="round-button-join">Log in</button>

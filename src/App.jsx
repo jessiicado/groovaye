@@ -1,19 +1,18 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { Router } from "react-router-dom";
+import Home from "./Routes/Home.jsx";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>HIIIII!!!</h1>
-      {/* Header: Logo and hotbar */}
-      <NavBar />
-      {/* <Header /> */}
-      {/* 'Tinder' Cards  */}
-      {/* Buttons on bottom Tinder Cards  */}
-
-      {/* Discography/5 top songs of the artist */}
-    </div>
+    <>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 export default App;
