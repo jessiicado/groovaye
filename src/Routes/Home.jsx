@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
 
 function Home() {
   const homeList = ["artist", "song", "band", "track", "album"]; //create word array

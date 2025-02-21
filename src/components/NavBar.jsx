@@ -3,6 +3,10 @@ import vinyl from "./vinyl.png";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+  const handleLogin = () => {
+    window.location.href = "http://localhost:5000/login";
+  };
+
   return (
     <div className="NavBar">
       {/* Clickable Logo */}
@@ -33,7 +37,9 @@ function NavBar() {
         </Link>
       </div>
       <div className="Join">
-        <button className="round-button-join">Log in</button>
+        <button onClick={handleLogin} className="round-button-join">
+          Log in
+        </button>
       </div>
     </div>
   );
