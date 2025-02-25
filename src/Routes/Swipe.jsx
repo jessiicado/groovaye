@@ -1,16 +1,14 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import NavBar from "../components/NavBar";
-import AlbumFrame from "../components/AlbumFrame";
-
+// import Recommend from "./components/Recommend";
 function Swipe() {
-  <>
-    <NavBar />
-    <AlbumFrame />
-  </>;
   return (
     <div className="SwipeMethod">
+      <NavBar />
+
       <h1>HELLOOO</h1>
+      {/* <Recommend /> */}
     </div>
   );
 }

@@ -1,8 +1,8 @@
 :root {
-  --page-background-color: #dfd3c3;
+  --page-background-color: #549778;
   --widget-background-color: #1e1e1e;
   --widget-background-hover-color: grey;
-  ---default-font-color: #1e1e1e;
+  --default-font-color: #1e1e1e;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -99,7 +99,7 @@ button:hover {
 .homepage span {
   background: linear-gradient(
     to right,
-    var(---default-font-color) 20%,
+    var(--default-font-color) 20%,
     #444040 30%,
     #858383 70%,
     #c0baba 80%
